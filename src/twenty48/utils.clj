@@ -1,8 +1,6 @@
 (ns twenty48.utils
   (:gen-class))
 
-
-
 (def filter-zero (partial filter (comp not zero?)))
 
 (def group-similar (partial partition-by identity))
@@ -25,7 +23,7 @@
 
 (def take-first-4 (partial take 4))
 
-
+(def transpose (partial apply map list))
 
 (def move-right (comp take-last-4 add-left-padding add-similar
                       merge-groups (partial map reverse)
