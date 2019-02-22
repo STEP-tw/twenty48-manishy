@@ -43,3 +43,15 @@
     (is (= '(4 2 0 0) (move-left '(0 2 2 2))))
     (is (= '(4 4 0 0) (move-left '(2 2 2 2))))
     (is (= '(4 2 0 0) (move-left '(0 2 2 2))))))
+
+(deftest transpose-test
+  (testing "Grid for transposing"
+    (is (= '((0 0 2 0)
+             (0 2 0 4)
+             (2 0 2 4)
+             (2 4 0 0))
+           (transpose '((0 0 2 2)
+                        (0 2 0 4)
+                        (2 0 2 0)
+                        (0 4 4 0)))))
+    ))

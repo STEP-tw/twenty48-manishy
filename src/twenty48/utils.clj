@@ -26,12 +26,8 @@
 (def transpose (partial apply map list))
 
 (def move-right (comp take-last-4 add-left-padding add-similar
-                      merge-groups (partial map reverse)
-                      filter-zero-and-group-numbers
-                      ))
+                      merge-groups (partial map reverse) filter-zero-and-group-numbers))
 
 (def move-left (comp take-first-4 add-right-padding add-similar
-                     merge-groups
-                     filter-zero-and-group-numbers
-                     ))
+                     merge-groups filter-zero-and-group-numbers))
 
