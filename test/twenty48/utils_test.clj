@@ -20,15 +20,6 @@
     ))
 
 
-; (deftest group-numbers-test
-;   (testing "Rows for grouping of only numbers"
-;     (is (= '(4 3 2) (group-numbers '(0 2 2 3 2))))
-;     (is (= '(2 4 4) (group-numbers '(2 2 2 4))))    
-;     (is (= '(4) (group-numbers '(0 2 0 2))))
-;     (is (= '(4) (group-numbers '(2 0 0 2))))
-;     ))
-
-
 (deftest move-right-test
   (testing "Rows for moving right "
     (is (= '(0 0 0 4) (move-right '(2 0 0 2))))
